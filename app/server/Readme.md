@@ -32,6 +32,19 @@
 
 <br/>
 
+### 005 Введение в контроллеры
+
+<br/>
+
+### 006 Создание контроллеров
+
+    $ nest generate controller auth --no-spec
+    $ nest generate controller product --no-spec
+    $ nest generate controller review --no-spec
+    $ nest generate controller top-page --no-spec
+
+<br/>
+
 <br/>
 
 ---

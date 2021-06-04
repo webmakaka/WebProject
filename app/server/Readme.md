@@ -75,6 +75,14 @@
 
 <br/>
 
+### 004 Подключение моделей
+
+<br/>
+
+![Application](/img/pic-course01-p01.png?raw=true)
+
+<br/>
+
 <br/>
 
 ---

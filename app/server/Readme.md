@@ -45,6 +45,36 @@
 
 <br/>
 
+### 007 Введение в провайдеры
+
+<br/>
+
+## 05 Работа с базой данных
+
+<br/>
+
+### 001 Работа с переменными окружения
+
+    $ npm install @nestjs/config
+
+<br/>
+
+### 002 Подготовка окружения
+
+    $ docker-compose up
+
+<br/>
+
+### 003 Подключение Mongo
+
+    $ yarn add mongoose @typegoose/typegoose nestjs-typegoose
+
+    $ yarn add -D @types/mongoose
+
+    $ npm start
+
+<br/>
+
 <br/>
 
 ---

@@ -1,4 +1,4 @@
-# [Ларичев Антон] [RUS, 2021]
+# # [Ларичев Антон] NestJS - с нуля, современный backend на TypeScript и Node JS [2021, RUS]
 
 <br/>
 

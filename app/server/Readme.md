@@ -113,6 +113,20 @@
 
 <br/>
 
+## 07 Валидация данных
+
+<br/>
+
+### 001 Exception filters и pipes
+
+<br/>
+
+### 002 Реализация ValidationPipe
+
+    $ yarn add class-transformer class-validator
+
+<br/>
+
 <br/>
 
 ---

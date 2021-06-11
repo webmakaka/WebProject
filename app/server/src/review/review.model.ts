@@ -11,7 +11,7 @@ export class ReviewModel extends TimeStamps {
   title: string;
 
   @prop()
-  secription: string;
+  description: string;
 
   @prop()
   rating: number;

@@ -255,6 +255,18 @@ $ curl \
 
 <br/>
 
+### 006 Тесты с авторизацией
+
+```
+// CREATE USER
+login: test@example.com
+pass: testpass123
+```
+
+    $ npm run test:e2e
+
+<br/>
+
 ---
 
 <br/>

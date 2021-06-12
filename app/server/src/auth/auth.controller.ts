@@ -25,7 +25,11 @@ export class AuthController {
     return this.authService.createUser(dto);
   }
 
-  @HttpCode(200)
   @Post('login')
-  async login(@Body() dto: AuthDto) {}
+  @HttpCode(200)
+  @UsePipes(new ValidationPipe())
+  async login(@Body() { login, password }: AuthDto) {
+    const { email } = await this.authService.validateUser(login, password);
+    return this.authService.login(email);
+  }
 }

@@ -189,6 +189,41 @@ $ curl \
 
 <br/>
 
+### 002 Как работает JWT
+
+<br/>
+
+### 003 Авторизация и генерация JWT
+
+    $ yarn add @nestjs/jwt
+
+<br/>
+
+```
+// LOGIN USER
+$ curl \
+    --data '{
+        "login": "marley",
+        "password": "pass123"
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/auth/login \
+    | python -m json.tool
+```
+
+<br/>
+
+**returns:**
+
+```
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmxleSIsImlhdCI6MTYyMzUwODk4NH0.UnuFUHMWq9xI1BaFEtJxsMIlB2-KaxsgeOmxwumjDS8"
+}
+
+```
+
+<br/>
+
 <br/>
 
 ---

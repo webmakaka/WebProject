@@ -12,6 +12,7 @@ import {
   ValidationPipe
 } from '@nestjs/common';
 import {JwtAuthGuard} from 'auth/guards/jwt.guard';
+import {UserEmail} from 'decorators/user-email.decorator';
 import {CreateReviewDto} from 'review/dto/create-review.dto';
 import {REVIEW_NOT_FOUND} from 'review/review.constants';
 import {ReviewService} from 'review/review.service';
@@ -21,12 +22,14 @@ export class ReviewController {
   constructor(private readonly reviewService: ReviewService) {}
 
   @Post('create')
+  @UseGuards(JwtAuthGuard)
   @UsePipes(new ValidationPipe())
   async create(@Body() dto: CreateReviewDto) {
     return this.reviewService.create(dto);
   }
 
   @Delete(':id')
+  @UseGuards(JwtAuthGuard)
   async delete(@Param('id') id: string) {
     const deletedDoc = await this.reviewService.delete(id);
     if (!deletedDoc) {
@@ -37,7 +40,10 @@ export class ReviewController {
 
   @Get('byProduct/:productId')
   @UseGuards(JwtAuthGuard)
-  async getByProduct(@Param('productId') productId: string) {
+  async getByProduct(
+    @Param('productId') productId: string,
+    @UserEmail() email: string,
+  ) {
     return this.reviewService.findByProductId(productId);
   }
 }

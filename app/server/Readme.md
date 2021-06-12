@@ -164,7 +164,7 @@ clinicjs.org
 // CREATE USER
 $ curl \
     --data '{
-        "login": "marley",
+        "login": "marley@example.com",
         "password": "pass123"
     }' \
     --header "Content-Type: application/json" \
@@ -203,7 +203,7 @@ $ curl \
 // LOGIN USER
 $ curl \
     --data '{
-        "login": "marley",
+        "login": "marley@example.com",
         "password": "pass123"
     }' \
     --header "Content-Type: application/json" \
@@ -249,7 +249,9 @@ $ curl \
     | python -m json.tool
 ```
 
+<br/>
 
+### 005 Декоратор для получения пользователя
 
 <br/>
 

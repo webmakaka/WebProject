@@ -127,6 +127,68 @@
 
 <br/>
 
+## 08 Отладка приложений
+
+<br/>
+
+### 001 Debug в VSCode
+
+<br/>
+
+### 002 Анализ памяти
+
+autocannon
+
+<br/>
+
+### 003 Анализ производительности
+
+clinicjs.org
+
+<br/>
+
+## 09 Авторизация
+
+<br/>
+
+### 001 Регистрация пользователя
+
+    $ nest generate service auth --no-spec
+
+    $ yarn add bcryptjs
+    $ yarn add -D types/bcryptjs
+
+<br/>
+
+```
+// CREATE USER
+$ curl \
+    --data '{
+        "login": "marley",
+        "password": "pass123"
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/auth/register \
+    | python -m json.tool
+```
+
+<br/>
+
+**returns:**
+
+```
+{
+    "__v": 0,
+    "_id": "60c4a539858699439e4a4fd4",
+    "createdAt": "2021-06-12T12:14:49.728Z",
+    "email": "marley",
+    "passwordHash": "$2a$10$X0/pNtytrb//xo0tGzPIK.o.UnAO80mJ604T1XSgLC/L9MJaBvPg.",
+    "updatedAt": "2021-06-12T12:14:49.728Z"
+}
+```
+
+<br/>
+
 <br/>
 
 ---

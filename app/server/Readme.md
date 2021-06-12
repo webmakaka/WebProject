@@ -224,6 +224,33 @@ $ curl \
 
 <br/>
 
+### 004 JWT стратегия и Guard
+
+    $ yarn add @nestjs/passport passport passport-jwt
+
+<br/>
+
+    $ yarn add -D @types/passport-jwt
+
+<br/>
+
+```
+$ export TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmxleSIsImlhdCI6MTYyMzUxMTkwMn0.TQBqDjbN_acjkgz9Lmk89TXCJUyJcKdlNGDJojFRci0
+```
+
+<br/>
+
+```
+// GET REVIEW BY PRODUCT ID
+$ curl \
+    --header "Content-Type: application/json" \
+    --header "Authorization: Bearer ${TOKEN}" \
+    --request GET http://localhost:3000/api/review/byProduct/123456789076 \
+    | python -m json.tool
+```
+
+
+
 <br/>
 
 ---

@@ -273,6 +273,113 @@ pass: testpass123
 
 <br/>
 
+## 10 Продвинутые темы
+
+<br/>
+
+### 001 Агрегации в Mongo
+
+    $ nest generate service product --no-spec
+
+```
+// CREATE PRODUCT
+$ curl \
+    --data '{
+        "image": "1.png",
+        "title": "Мой продукт",
+        "price": 100,
+        "oldPrice": 120,
+        "credit": 10,
+        "description": "Описание продукта",
+        "advantages": "Преимущества продукта",
+        "disAdvantages": "Недостатки продукта",
+        "categories": ["test"],
+        "tags": ["тег1"],
+        "characteristics": [{
+            "name": "Характеристика 1",
+            "value": "1"
+        }, {
+            "name": "Характеристика 12",
+            "value": "2"
+        }]
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/product/create \
+    | python -m json.tool
+```
+
+<br/>
+
+```
+// UPDATE PRODUCT
+$ curl \
+    --data '{
+        "image": "2.png",
+        "title": "Мой продукт",
+        "price": 100,
+        "oldPrice": 120,
+        "credit": 10,
+        "description": "Описание продукта",
+        "advantages": "Преимущества продукта",
+        "disAdvantages": "Недостатки продукта",
+        "categories": ["test"],
+        "tags": ["тег1"],
+        "characteristics": [{
+            "name": "Характеристика 1",
+            "value": "1"
+        }, {
+            "name": "Характеристика 12",
+            "value": "2"
+        }]
+    }' \
+    --header "Content-Type: application/json" \
+    --request PATCH http://localhost:3000/api/product/60c720d20c8e6f9e29b87067 \
+    | python -m json.tool
+```
+
+<br/>
+
+```
+// DELETE PRODUCT
+$ curl \
+    --header "Content-Type: application/json" \
+    --request DELETE http://localhost:3000/api/product/60c720d20c8e6f9e29b87067
+```
+
+<br/>
+
+```
+// ADD REVIEW TO PRODUCT
+$ curl \
+    --data '{
+        "name": "Тест 2",
+        "title": "Заголовок",
+        "description": "Тестовое описание",
+        "rating": 4,
+        "productId": "60c7219c0c8e6f9e29b87068"
+
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/review/create \
+    | python -m json.tool
+```
+
+<br/>
+
+```
+// FIND PRODUCT BY CATEGORY
+$ curl \
+    --data '{
+        "category": "test",
+        "limit": 5
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/product/find \
+    | python -m json.tool
+```
+
+<br/>
+
 ---
 
 <br/>

@@ -380,6 +380,24 @@ $ curl \
 
 <br/>
 
+### 002 Пишем свой Pipe
+
+```
+// UPDATE PRODUCT WITH WRONG ID
+```
+
+**returns:**
+
+```
+{
+    "error": "Bad Request",
+    "message": "[App] \u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 Id",
+    "statusCode": 400
+}
+```
+
+<br/>
+
 ---
 
 <br/>

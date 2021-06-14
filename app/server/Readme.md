@@ -398,6 +398,14 @@ $ curl \
 
 <br/>
 
+### 003 Функции в Mongo 4.4
+
+```
+// FIND PRODUCT BY CATEGORY
+```
+
+<br/>
+
 ---
 
 <br/>

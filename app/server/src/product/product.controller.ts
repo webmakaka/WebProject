@@ -8,10 +8,12 @@ import {
   Param,
   Patch,
   Post,
+  UseGuards,
   UsePipes,
   ValidationPipe
 } from '@nestjs/common';
-import {IdValidationPipe} from 'pipes/ad-validation.pipe';
+import {JwtAuthGuard} from 'auth/guards/jwt.guard';
+import {IdValidationPipe} from 'pipes/id-validation.pipe';
 import {CreateProductDto} from 'product/dto/create-roduct.dto';
 import {FindProductDto} from 'product/dto/find.product.dto';
 import {PRODUCT_NOT_FOUND_ERROR} from 'product/product.constants';
@@ -22,11 +24,6 @@ import {ProductService} from 'product/product.service';
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
 
-  @Post('create')
-  async create(@Body() dto: CreateProductDto) {
-    return this.productService.create(dto);
-  }
-
   @Get(':id')
   async get(@Param('id', IdValidationPipe) id: string) {
     const product = await this.productService.findById(id);
@@ -36,7 +33,21 @@ export class ProductController {
     return product;
   }
 
+  @Post('find')
+  @HttpCode(200)
+  @UsePipes(new ValidationPipe())
+  async find(@Body() dto: FindProductDto) {
+    return this.productService.findWithReviews(dto);
+  }
+
+  @Post('create')
+  @UseGuards(JwtAuthGuard)
+  async create(@Body() dto: CreateProductDto) {
+    return this.productService.create(dto);
+  }
+
   @Delete(':id')
+  @UseGuards(JwtAuthGuard)
   async delete(@Param('id', IdValidationPipe) id: string) {
     const deletedProduct = await this.productService.deleteById(id);
     if (!deletedProduct) {
@@ -45,6 +56,7 @@ export class ProductController {
   }
 
   @Patch(':id')
+  @UseGuards(JwtAuthGuard)
   async patch(
     @Param('id', IdValidationPipe) id: string,
     @Body() dto: ProductModel,
@@ -54,12 +66,5 @@ export class ProductController {
       throw new NotFoundException(PRODUCT_NOT_FOUND_ERROR);
     }
     return updatedProduct;
-  }
-
-  @Post('find')
-  @HttpCode(200)
-  @UsePipes(new ValidationPipe())
-  async find(@Body() dto: FindProductDto) {
-    return this.productService.findWithReviews(dto);
   }
 }

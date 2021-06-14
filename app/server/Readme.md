@@ -304,6 +304,7 @@ $ curl \
         }]
     }' \
     --header "Content-Type: application/json" \
+    --header "Authorization: Bearer ${TOKEN}" \
     --request POST http://localhost:3000/api/product/create \
     | python -m json.tool
 ```
@@ -333,6 +334,7 @@ $ curl \
         }]
     }' \
     --header "Content-Type: application/json" \
+    --header "Authorization: Bearer ${TOKEN}" \
     --request PATCH http://localhost:3000/api/product/60c720d20c8e6f9e29b87067 \
     | python -m json.tool
 ```
@@ -343,6 +345,7 @@ $ curl \
 // DELETE PRODUCT
 $ curl \
     --header "Content-Type: application/json" \
+    --header "Authorization: Bearer ${TOKEN}" \
     --request DELETE http://localhost:3000/api/product/60c720d20c8e6f9e29b87067
 ```
 
@@ -402,6 +405,55 @@ $ curl \
 
 ```
 // FIND PRODUCT BY CATEGORY
+```
+
+<br/>
+
+### 004 Упражнение 4 - Создание сервиса страниц
+
+<br/>
+
+### 005 Сервис страниц
+
+    $ nest generate service top-page --no-spec
+
+```
+// CREATE PAGE
+$ curl \
+    --data '{
+        "firstCategory": 1,
+        "secondCategory": "Разработка",
+        "alias" : "typescript",
+        "title": "Курсы по TypeScript",
+        "category": "typescript",
+        "hh": {
+            "count": 1000,
+            "juniorSalary": 80000,
+            "middleSalary": 120000,
+            "seniorSalary": 180000
+        },
+        "advantages": [{
+            "title": "Скорость разработки",
+            "description": "Мое описание"
+        }],
+        "SeoText": "тест1",
+        "tagsTitle": "Полученные знания",
+        "tags": ["TypeScript"]
+    }' \
+    --header "Content-Type: application/json" \
+    --header "Authorization: Bearer ${TOKEN}" \
+    --request POST http://localhost:3000/api/top-page/create \
+    | python -m json.tool
+```
+
+<br/>
+
+```
+// GET PAGE BY ALIAS
+$ curl \
+    --header "Content-Type: application/json" \
+    --request GET http://localhost:3000/api/top-page/byAlias/typescript \
+    | python -m json.tool
 ```
 
 <br/>

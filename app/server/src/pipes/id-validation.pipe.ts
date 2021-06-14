@@ -2,10 +2,10 @@ import {
   ArgumentMetadata,
   BadRequestException,
   Injectable,
-  PipeTransform
+  PipeTransform,
 } from '@nestjs/common';
-import {Types} from 'mongoose';
-import {ID_VALIDATION_ERROR} from 'pipes/ad-validation.constants';
+import { Types } from 'mongoose';
+import { ID_VALIDATION_ERROR } from 'pipes/id-validation.constants';
 
 @Injectable()
 export class IdValidationPipe implements PipeTransform {

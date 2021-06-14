@@ -13,7 +13,7 @@ import {
 } from '@nestjs/common';
 import { JwtAuthGuard } from 'auth/guards/jwt.guard';
 import { UserEmail } from 'decorators/user-email.decorator';
-import { IdValidationPipe } from 'pipes/ad-validation.pipe';
+import { IdValidationPipe } from 'pipes/id-validation.pipe';
 import { CreateReviewDto } from 'review/dto/create-review.dto';
 import { REVIEW_NOT_FOUND } from 'review/review.constants';
 import { ReviewService } from 'review/review.service';

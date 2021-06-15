@@ -458,13 +458,19 @@ $ curl \
 
 <br/>
 
-## 11 Выкладка на production (Бонус!)
+## 11 Выкладка на production (Бонус)
 
 <br/>
 
 ### 001 Сборка Docker
 
     $ docker build -t webmakaka/top-api .
+
+<br/>
+
+### 002 Docker-compose
+
+    $ docker-compose up
 
 <br/>
 

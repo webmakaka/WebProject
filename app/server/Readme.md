@@ -522,6 +522,14 @@ $ curl \
 // UPLOAD FILE
 ```
 
+<br/>
+
+### 003 Serve файлов
+
+    $ yarn add @nestjs/serve-static
+
+http://localhost:3000/static/2021-06-15/rs.webp
+
 ---
 
 <br/>

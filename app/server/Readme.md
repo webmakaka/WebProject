@@ -511,6 +511,17 @@ $ curl \
     | python -m json.tool
 ```
 
+<br/>
+
+### 002 Конвертация изображений
+
+    $ yarn add sharp
+    $ yarn add -D @types/sharp
+
+```
+// UPLOAD FILE
+```
+
 ---
 
 <br/>

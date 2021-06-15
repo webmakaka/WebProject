@@ -6,6 +6,7 @@ import { ReviewModule } from 'review/review.module';
 import { AuthModule } from './auth/auth.module';
 import { ProductModule } from './product/product.module';
 import { TopPageModule } from './top-page/top-page.module';
+import { FilesModule } from './files/files.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { TopPageModule } from './top-page/top-page.module';
     TopPageModule,
     ProductModule,
     ReviewModule,
+    FilesModule,
   ],
 })
 export class AppModule {}

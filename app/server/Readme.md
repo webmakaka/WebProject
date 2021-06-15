@@ -478,6 +478,39 @@ $ curl \
 
 <br/>
 
+## 12 Работа с файлами
+
+<br/>
+
+### 001 Загрузка файлов
+
+    $ nest generate module files
+    $ nest generate controller files --no-spec
+    $ nest generate service files --no-spec
+
+<br/>
+
+    $ yarn add app-root-path
+    $ yarn add date-fns
+
+<br/>
+
+    $ yarn add -D types/app-root-path
+    $ yarn add -D multer @types/multer
+    $ yarn add -D @types/fs-extra
+
+<br/>
+
+```
+// UPLOAD FILE
+$ curl \
+    -F "files=@/home/marley/Pictures/rs.png" \
+    --header "Content-Type: multipart/form-data" \
+    --header "Authorization: Bearer ${TOKEN}" \
+    --request POST "http://localhost:3000/api/files/upload" \
+    | python -m json.tool
+```
+
 ---
 
 <br/>

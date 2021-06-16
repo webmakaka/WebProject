@@ -530,6 +530,65 @@ $ curl \
 
 http://localhost:3000/static/2021-06-15/rs.webp
 
+<br/>
+
+## 13. Telegram bot уведомлений
+
+<br/>
+
+### 1. Подготовка бота
+
+Нужны будут Телеграм ID, Токен
+
+Bot: What's my Telegram ID
+
+Bot: BotFather -> New Bot -> Дает токен
+
+<br/>
+
+### 2. Интеграция Telegraf
+
+    $ yarn add telegraf
+
+<br/>
+
+    $ nest generate module telegram
+    $ nest generate service telegram --no-spec
+
+<br/>
+
+### 3. Реализация forRootAsync
+
+Не тестировалось!
+
+В .env (предположительно) нужно прописать.
+
+```
+TELEGRAM_TOKEN=TELEGRAM_TOKEN
+CHAT_ID=CHAT_ID
+```
+
+<br/>
+
+```
+// REVIEW NOTIFY
+$ curl \
+    --data '{
+        "name": "Тест 1",
+        "title": "Заголовок",
+        "descriptio": "Описание тестовое",
+        "rating": 5,
+        "productId": "60c7219c0c8e6f9e29b87068",
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/review/notify \
+    | python -m json.tool
+```
+
+<br/>
+
+<br/>
+
 ---
 
 <br/>

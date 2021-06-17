@@ -13,6 +13,7 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { JwtAuthGuard } from 'auth/guards/jwt.guard';
+import { HhService } from 'hh/hh.service';
 import { IdValidationPipe } from 'pipes/id-validation.pipe';
 import { CreateTopPageDto } from 'top-page/dto/create-top-page.dto';
 import { FindTopPageDto } from 'top-page/dto/find-top-page.dto';
@@ -21,7 +22,10 @@ import { TopPageService } from 'top-page/top-page.service';
 
 @Controller('top-page')
 export class TopPageController {
-  constructor(private readonly topPageService: TopPageService) {}
+  constructor(
+    private readonly topPageService: TopPageService,
+    private readonly hhService: HhService,
+  ) {}
 
   @Post('create')
   @UseGuards(JwtAuthGuard)
@@ -45,6 +49,30 @@ export class TopPageController {
       throw new NotFoundException(NOT_FOUND_TOP_PAGE_ERROR);
     }
     return page;
+  }
+
+  // @Get('textSearch/:text')
+  // async textSearch(@Param('text') alias: string) {
+  //   return this.topPageService.findByText(text);
+  // }
+
+  @Post('test')
+  async test() {
+    const data = await this.topPageService.findForHhUpdate(new Date());
+    for (let page of data) {
+      const hhData = await this.hhService.getData(page.category);
+      page.hh = hhData;
+      await this.sleep();
+      await this.topPageService.updateById(page._id, page);
+    }
+  }
+
+  sleep() {
+    return new Promise<void>((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, 1000);
+    });
   }
 
   @Delete(':id')

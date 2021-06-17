@@ -1,11 +1,12 @@
-import {Module} from '@nestjs/common';
+import { HttpModule, Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { HhService } from 'hh/hh.service';
-import {TopPageModule} from 'top-page/top-page.module';
-import {HhController} from './hh.controller';
+import { HhController } from './hh.controller';
 
 @Module({
   providers: [HhService],
   controllers: [HhController],
-  imports: [TopPageModule],
+  imports: [ConfigModule, HttpModule],
+  exports: [HhService],
 })
 export class HhModule {}

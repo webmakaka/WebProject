@@ -589,6 +589,8 @@ $ curl \
 
 ## 14. Интеграция с внешним API (hh.ru)
 
+Не тестировалось!
+
 <br/>
 
 ### 1. Обзор модуля
@@ -600,6 +602,18 @@ $ curl \
     $ nest generate module hh
     $ nest generate service hh --no-spec
     $ nest generate controller hh --no-spec
+
+<br/>
+
+### 3. HttpModule
+
+```
+// RUN HH API TEST
+$ curl \
+    --header "Content-Type: application/json" \
+    --request POST http://localhost:3000/api/top-page/test \
+    | python -m json.tool
+```
 
 <br/>
 

@@ -617,6 +617,13 @@ $ curl \
 
 <br/>
 
+### 4. ScheduleModule
+
+    $ yarn add @ness/schedule
+    $ yarn add @types/cron
+
+<br/>
+
 ---
 
 <br/>

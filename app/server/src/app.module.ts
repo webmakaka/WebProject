@@ -9,6 +9,7 @@ import {FilesModule} from './files/files.module';
 import {ProductModule} from './product/product.module';
 import {TelegramModule} from './telegram/telegram.module';
 import {TopPageModule} from './top-page/top-page.module';
+import { HhModule } from './hh/hh.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import {TopPageModule} from './top-page/top-page.module';
       inject: [ConfigService],
       useFactory: getTelegramConfig,
     }),
+    HhModule,
   ],
 })
 export class AppModule {}

@@ -587,6 +587,20 @@ $ curl \
 
 <br/>
 
+## 14. Интеграция с внешним API (hh.ru)
+
+<br/>
+
+### 1. Обзор модуля
+
+<br/>
+
+### 2. Подготовка моделей
+
+    $ nest generate module hh
+    $ nest generate service hh --no-spec
+    $ nest generate controller hh --no-spec
+
 <br/>
 
 ---

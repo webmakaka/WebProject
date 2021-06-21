@@ -16,6 +16,29 @@
 
 <br/>
 
+### 004 Настройка eslint
+
+    $ yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+<br/>
+
+### 005 Настройка stylelint
+
+    $ yarn add -D stylelint stylelint-config-standard stylelint-order stylelint-order-config-standard
+
+<br/>
+
+### 006 Отладка в VSCode
+
+<br/>
+
+### 007 React Dev Tools
+
+
+
+
+<br/>
+
 ---
 
 <br/>

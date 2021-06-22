@@ -92,6 +92,16 @@
 
 <br/>
 
+### 003 Classnames
+
+    $ yarn add -D @types/classnames
+
+<br/>
+
+![Application](/img/pic-course02-m07-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

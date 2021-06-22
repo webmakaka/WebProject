@@ -84,6 +84,14 @@
 
 <br/>
 
+### 002 Первый компонент
+
+<br/>
+
+![Application](/img/pic-course02-m07-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -110,7 +110,23 @@
 
 <br/>
 
-### 005 Работа с svg
+При работе с версией "next": "11.0.0" ошибка, работает с "next": "10.1.3".
+
+```
+info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
+ValidationError: Invalid configuration object. Webpack has been initialized using a configuration object that does not match the API schema.
+ - configuration[0].module.rules[4].issuer has an unknown property 'test'. These properties are valid:
+   object { and?, not?, or? }
+   -> Logic operators used in a condition matcher.
+```
+
+<br/>
+
+    $ yarn add -D @svgr/webpack
+
+<br/>
+
+![Application](/img/pic-course02-m07-p03.png?raw=true)
 
 <br/>
 

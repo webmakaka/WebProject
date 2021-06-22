@@ -138,6 +138,14 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+### 007 Компонент тэга
+
+<br/>
+
+![Application](/img/pic-course02-m07-p05.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

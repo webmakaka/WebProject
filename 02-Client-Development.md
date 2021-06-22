@@ -110,7 +110,7 @@
 
 <br/>
 
-При работе с версией "next": "11.0.0" ошибка, работает с "next": "10.1.3".
+При работе с версией "next": "11.0.0" ошибка, но работает с "next": "10.1.3".
 
 ```
 info  - Using webpack 5. Reason: Enabled by default https://nextjs.org/docs/messages/webpack5
@@ -127,6 +127,14 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 <br/>
 
 ![Application](/img/pic-course02-m07-p03.png?raw=true)
+
+<br/>
+
+### 006 Упражнение - Компонент p
+
+<br/>
+
+![Application](/img/pic-course02-m07-p04.png?raw=true)
 
 <br/>
 

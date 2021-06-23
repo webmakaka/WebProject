@@ -4,6 +4,8 @@ import { Button, Htag, P, Rating, Tag } from '../components/';
 export default function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0);
 
+  const [rating, setRating] = useState<number>(2);
+
   return (
     <>
       <Htag tag="h3">{counter}</Htag>
@@ -28,7 +30,7 @@ export default function Home(): JSX.Element {
         Green
       </Tag>
       <Tag color="primary">Primary</Tag>
-      <Rating rating={4} />
+      <Rating rating={rating} isEditable={true} setRating={setRating} />
     </>
   );
 }

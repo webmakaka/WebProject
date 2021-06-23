@@ -184,6 +184,10 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+### 007 Компонент рейтинга - 2
+
+<br/>
+
 ---
 
 <br/>

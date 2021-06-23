@@ -204,6 +204,10 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+### 003 Пишем HOC withLayout
+
+<br/>
+
 ---
 
 <br/>

@@ -146,6 +146,44 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+## 08 Statefull компоненты
+
+<br/>
+
+### 001 React Hooks
+
+<br/>
+
+![Application](/img/pic-course02-m08-p01.png?raw=true)
+
+<br/>
+
+### 002 useState
+
+<br/>
+
+### 003 useEffect
+
+<br/>
+
+### 004 Правила использования Hooks
+
+    $ yarn add -D eslint-plugin-react-hooks
+
+<br/>
+
+### 005 Архитектура компонента рейтинга
+
+<br/>
+
+### 006 Компонент рейтинга - 1
+
+<br/>
+
+![Application](/img/pic-course02-m08-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

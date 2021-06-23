@@ -1,10 +1,17 @@
-import { Button, Htag, P, Tag } from '../components/';
+import { useState } from 'react';
+import { Button, Htag, P, Rating, Tag } from '../components/';
 
 export default function Home(): JSX.Element {
+  const [counter, setCounter] = useState<number>(0);
+
   return (
     <>
-      <Htag tag="h3">Текст</Htag>
-      <Button appearance="primary" arrow="right">
+      <Htag tag="h3">{counter}</Htag>
+      <Button
+        appearance="primary"
+        arrow="right"
+        onClick={() => setCounter((x) => x + 1)}
+      >
         Кнопка1
       </Button>{' '}
       <Button appearance="ghost" arrow="down">
@@ -21,6 +28,7 @@ export default function Home(): JSX.Element {
         Green
       </Tag>
       <Tag color="primary">Primary</Tag>
+      <Rating rating={4} />
     </>
   );
 }

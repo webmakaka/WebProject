@@ -188,6 +188,22 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+## 09 HOC компоненты
+
+<br/>
+
+### 001 Что такое HOC?
+
+<br/>
+
+### 002 Layout
+
+<br/>
+
+![Application](/img/pic-course02-m09-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -244,6 +244,16 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+### 008 Упражнение - Вёрстка footers
+
+    $ yarn add date-fns
+
+<br/>
+
+![Application](/img/pic-course02-m10-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -1,19 +1,18 @@
 import { FunctionComponent } from 'react';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
+import styles from './Layout.module.css';
 import { ILayoutProps } from './Layout.props';
 import { Sidebar } from './Sidebar/Sidebar';
 
 export const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
-    <>
-      <Header />
-      <div>
-        <Sidebar />
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </>
+    <div className={styles.wrapper}>
+      <Header className={styles.header} />
+      <Sidebar className={styles.sidebar} />
+      <div className={styles.body}>{children}</div>
+      <Footer className={styles.footer} />
+    </div>
   );
 };
 

@@ -208,6 +208,42 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+## 10 CSS Grid
+
+<br/>
+
+### 001 Обзор модуля
+
+<br/>
+
+### 002 Template и gap
+
+<br/>
+
+### 003 Justify и align
+
+<br/>
+
+### 004 Распределение ячеек
+
+<br/>
+
+### 005 Template-area
+
+<br/>
+
+### 006 Лучшие практики
+
+<br/>
+
+### 007 Вёрстка layout
+
+<br/>
+
+![Application](/img/pic-course02-m10-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -254,6 +254,50 @@ ValidationError: Invalid configuration object. Webpack has been initialized usin
 
 <br/>
 
+## 11 Server side rendering
+
+<br/>
+
+### 001 Переменные окружения
+
+<br/>
+
+### 002 Как работает SSR?
+
+<br/>
+
+### 003 SSR в NextJS
+
+<br/>
+
+### 004 Использование getStaticProps
+
+<br/>
+
+```
+$ curl \
+    --data '{
+        "firstCategory": 0
+    }' \
+    --header "Content-Type: application/json" \
+    --request POST https://courses-top.ru/api/top-page/find \
+    | jq
+```
+
+<br/>
+
+    $ yarn add axios
+
+<br/>
+
+http://json2ts.com/
+
+<br/>
+
+![Application](/img/pic-course02-m11-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

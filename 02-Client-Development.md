@@ -298,6 +298,29 @@ http://json2ts.com/
 
 <br/>
 
+### 005 Использование getStaticPaths
+
+<br/>
+
+```
+// GET PAGE BY ALIAS
+$ curl \
+    --header "Content-Type: application/json" \
+    --request GET https://courses-top.ru/api/top-page/byAlias/photoshop \
+    | jq
+```
+
+<br/>
+
+http://localhost:3000/courses/photoshop/
+
+<br/>
+
+    $ npm run build
+    $ npm run start
+
+<br/>
+
 ---
 
 <br/>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { GetStaticProps } from 'next';
 import { useState } from 'react';
 import { Button, Htag, P, Rating, Tag } from '../components/';
-import { IMenuItem } from '../interfaces/menu-interface';
+import { IMenuItem } from '../interfaces/menu.interface';
 import { withLayout } from '../layout/Layout';
 
 function Home({ menu }: IHomeProps): JSX.Element {

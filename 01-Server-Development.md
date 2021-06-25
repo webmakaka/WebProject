@@ -169,7 +169,7 @@ $ curl \
     }' \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/auth/register \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -208,7 +208,7 @@ $ curl \
     }' \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/auth/login \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -246,7 +246,7 @@ $ curl \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer ${TOKEN}" \
     --request GET http://localhost:3000/api/review/byProduct/123456789076 \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -281,6 +281,8 @@ pass: testpass123
 
     $ nest generate service product --no-spec
 
+<br/>
+
 ```
 // CREATE PRODUCT
 $ curl \
@@ -306,7 +308,17 @@ $ curl \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer ${TOKEN}" \
     --request POST http://localhost:3000/api/product/create \
-    | python -m json.tool
+    | jq
+```
+
+<br/>
+
+```
+// GET PRODUCT
+$ curl \
+    --header "Content-Type: application/json" \
+    --request GET http://localhost:3000/api/product/6040de091a2ac332d80ca788 \
+    | jq
 ```
 
 <br/>
@@ -336,7 +348,7 @@ $ curl \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer ${TOKEN}" \
     --request PATCH http://localhost:3000/api/product/60c720d20c8e6f9e29b87067 \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -364,7 +376,7 @@ $ curl \
     }' \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/review/create \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -378,7 +390,7 @@ $ curl \
     }' \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/product/find \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -443,7 +455,7 @@ $ curl \
     --header "Content-Type: application/json" \
     --header "Authorization: Bearer ${TOKEN}" \
     --request POST http://localhost:3000/api/top-page/create \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -453,7 +465,7 @@ $ curl \
 $ curl \
     --header "Content-Type: application/json" \
     --request GET http://localhost:3000/api/top-page/byAlias/typescript \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -508,7 +520,7 @@ $ curl \
     --header "Content-Type: multipart/form-data" \
     --header "Authorization: Bearer ${TOKEN}" \
     --request POST "http://localhost:3000/api/files/upload" \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -582,7 +594,7 @@ $ curl \
     }' \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/review/notify \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>
@@ -612,7 +624,7 @@ $ curl \
 $ curl \
     --header "Content-Type: application/json" \
     --request POST http://localhost:3000/api/top-page/test \
-    | python -m json.tool
+    | jq
 ```
 
 <br/>

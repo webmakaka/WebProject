@@ -333,6 +333,10 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+![Application](/img/pic-course02-m12-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -369,6 +369,18 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+![Application](/img/pic-course02-m13-p01.png?raw=true)
+
+<br/>
+
+### 005 Вёрстка Sidebar
+
+<br/>
+
+![Application](/img/pic-course02-m13-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

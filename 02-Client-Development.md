@@ -337,6 +337,14 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+### 003 Вёрстка меню
+
+<br/>
+
+![Application](/img/pic-course02-m12-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

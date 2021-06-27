@@ -345,6 +345,14 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+## 13 Роутинг
+
+<br/>
+
+### 001 Компонент Link
+
+<br/>
+
 ---
 
 <br/>

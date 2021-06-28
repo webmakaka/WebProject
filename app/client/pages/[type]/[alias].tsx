@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { firstLevelMenu } from 'helpers/helpers';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import { TopPageComponent } from 'page-components';
 import { ParsedUrlQuery } from 'querystring';
 import { IMenuItem } from '../../interfaces/menu.interface';
 import {
@@ -10,11 +11,21 @@ import {
 import { IProductModel } from '../../interfaces/product.interface';
 import { withLayout } from '../../layout/Layout';
 
-function Course({ menu, page, products }: ICourseProps): JSX.Element {
-  return <>{products && products.length}</>;
+function TopPage({
+  firstCategory,
+  page,
+  products,
+}: ITopPageProps): JSX.Element {
+  return (
+    <TopPageComponent
+      firstCategory={firstCategory}
+      page={page}
+      products={products}
+    />
+  );
 }
 
-export default withLayout(Course);
+export default withLayout(TopPage);
 
 export const getStaticPaths: GetStaticPaths = async () => {
   let paths: string[] = [];
@@ -37,7 +48,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<ICourseProps> = async ({
+export const getStaticProps: GetStaticProps<ITopPageProps> = async ({
   params,
 }: GetStaticPropsContext<ParsedUrlQuery>) => {
   if (!params) {
@@ -95,7 +106,7 @@ export const getStaticProps: GetStaticProps<ICourseProps> = async ({
   }
 };
 
-interface ICourseProps extends Record<string, unknown> {
+interface ITopPageProps extends Record<string, unknown> {
   menu: IMenuItem[];
   firstCategory: ETopLevelCategory;
   page: ITopPageModel;

@@ -389,6 +389,14 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+### 002 Вёрстка страницы продуктов - 1
+
+<br/>
+
+![Application](/img/pic-course02-m14-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

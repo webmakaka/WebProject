@@ -397,6 +397,14 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+### 003 Regex отображения цены
+
+<br/>
+
+![Application](/img/pic-course02-m14-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

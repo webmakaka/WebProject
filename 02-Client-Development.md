@@ -405,6 +405,18 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+### 004 Упражнение - Доработка страницы
+
+<br/>
+
+### 005 Вёрстка страницы продуктов - 2
+
+<br/>
+
+![Application](/img/pic-course02-m14-p03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

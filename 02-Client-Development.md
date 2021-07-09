@@ -417,6 +417,12 @@ http://localhost:3000/courses/photoshop/
 
 <br/>
 
+### 006 Вставка HTML
+
+http://localhost:3000/courses/big-data
+
+<br/>
+
 ---
 
 <br/>

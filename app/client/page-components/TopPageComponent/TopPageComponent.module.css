@@ -13,3 +13,25 @@
   justify-items: left;
   gap: 20px;
 }
+
+.seo h1 {
+  fond-wight: 500;
+  font-size: 26px;
+  line-height: 35px;
+  margin: 0;
+}
+
+.seo h2 {
+  fond-wight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.seo h3 {
+  fond-wight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+}

@@ -40,7 +40,6 @@ export const Menu = (): JSX.Element => {
                 </div>
               </a>
             </Link>
-
             {m.id == firstCategory && buildSecondLevel(m)}
           </div>
         ))}
@@ -92,6 +91,5 @@ export const Menu = (): JSX.Element => {
       </Link>
     ));
   };
-
   return <div className={styles.menu}>{buildFirstLevel()}</div>;
 };

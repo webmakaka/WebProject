@@ -5,7 +5,6 @@ import { ReviewService } from 'review/review.service';
 
 describe('ReviewService', () => {
   let service: ReviewService;
-
   const exec = { exec: jest.fn() };
 
   const reviewRepositoryFactory = () => ({
@@ -22,7 +21,6 @@ describe('ReviewService', () => {
         },
       ],
     }).compile();
-
     service = module.get<ReviewService>(ReviewService);
   });
 

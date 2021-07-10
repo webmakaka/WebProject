@@ -447,6 +447,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 002 Упражнение - Компонент Textarea
+
+<br/>
+
 ---
 
 <br/>

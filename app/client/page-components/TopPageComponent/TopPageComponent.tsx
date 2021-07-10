@@ -1,4 +1,5 @@
 import { Advantages, HhData, Htag, Sort, Tag } from 'components';
+import { Product } from 'components/Product/Product';
 import { ESort } from 'components/Sort/Sort.props';
 import { ETopLevelCategory } from 'interfaces/page.interface';
 import { sortReducer } from 'page-components/TopPageComponent/sort.reducer';
@@ -36,7 +37,7 @@ export const TopPageComponent = ({
       </div>
       <div>
         {sortedProducts &&
-          sortedProducts.map((p) => <div key={p._id}>{p.title}</div>)}
+          sortedProducts.map((p) => <Product key={p._id} product={p} />)}
       </div>
 
       <div className={styles.hhTitle}>

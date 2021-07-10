@@ -451,6 +451,18 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 002 Упражнение - Компонент Textarea
+
+<br/>
+
+### 003 Компонент поиска
+
+<br/>
+
+![Application](/img/pic-course02-m15-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

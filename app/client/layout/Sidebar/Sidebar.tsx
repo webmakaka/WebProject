@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { Search } from 'components';
 import { Menu } from 'layout/Menu/Menu';
 import Logo from '../logo.svg';
 import styles from './Sidebar.module.css';
@@ -11,7 +12,7 @@ export const Sidebar = ({
   return (
     <div className={cn(className, styles.sidebar)} {...props}>
       <Logo className={styles.logo} />
-      <div>Поиск</div>
+      <Search />
       <Menu />
     </div>
   );

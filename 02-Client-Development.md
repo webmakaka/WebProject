@@ -467,6 +467,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 005 Компонент продукта - сетка
+
+<br/>
+
+![Application](/img/pic-course02-m15-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

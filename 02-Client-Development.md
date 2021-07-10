@@ -431,6 +431,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 009 Reducer сортировки
+
+<br/>
+
+![Application](/img/pic-course02-m14-p04.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -483,6 +483,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 007 Склонение слов
+
+<br/>
+
+![Application](/img/pic-course02-m15-p04.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

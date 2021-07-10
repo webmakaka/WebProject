@@ -475,6 +475,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 006 Компонент продукта - стили
+
+<br/>
+
+![Application](/img/pic-course02-m15-p03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

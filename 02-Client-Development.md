@@ -423,6 +423,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 007 useReducer
+
+<br/>
+
+### 008 Компонент сортировки
+
+<br/>
+
 ---
 
 <br/>

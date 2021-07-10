@@ -5,4 +5,5 @@ export * from './HhData/HhData';
 export * from './Htag/Htag';
 export * from './P/P';
 export * from './Rating/Rating';
+export * from './Sort/Sort';
 export * from './Tag/Tag';

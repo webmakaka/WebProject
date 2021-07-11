@@ -5,6 +5,7 @@ import { Divider } from 'components/Divider/Divider';
 import { Rating } from 'components/Rating/Rating';
 import { Tag } from 'components/Tag/Tag';
 import { declOfNum, priceRu } from 'helpers/helpers';
+import Image from 'next/image';
 import styles from './Product.module.css';
 import { IProductProps } from './Product.props';
 
@@ -16,9 +17,11 @@ export const Product = ({
   return (
     <Card className={styles.product}>
       <div className={styles.logo}>
-        <img
+        <Image
           src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
           alt={product.title}
+          width={70}
+          height={70}
         />
       </div>
       <div className={styles.title}>{product.title}</div>

@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    domains: ['courses-top.ru'],
+  },
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({

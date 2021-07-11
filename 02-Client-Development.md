@@ -495,6 +495,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 009 Компонент продукта - адаптив
+
+<br/>
+
+![Application](/img/pic-course02-m15-p05.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -1,4 +1,5 @@
 // import cn from 'classnames';
+import cn from 'classnames';
 import { Button } from 'components/Button/Button';
 import { Card } from 'components/Card/Card';
 import { Divider } from 'components/Divider/Divider';
@@ -78,7 +79,7 @@ export const Product = ({
           </div>
         )}
       </div>
-      <Divider className={styles.hr} />
+      <Divider className={cn(styles.hr, styles.hr2)} />
       <div className={styles.actions}>
         <Button appearance="primary">Узнать подробнее</Button>
         <Button

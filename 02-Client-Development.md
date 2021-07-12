@@ -515,6 +515,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 002 Форма отзыва
+
+<br/>
+
+![Application](/img/pic-course02-m16-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

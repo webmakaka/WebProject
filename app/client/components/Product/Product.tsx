@@ -5,6 +5,7 @@ import { Card } from 'components/Card/Card';
 import { Divider } from 'components/Divider/Divider';
 import { Rating } from 'components/Rating/Rating';
 import { Review } from 'components/Review/Review';
+import { ReviewForm } from 'components/ReviewForm/ReviewForm';
 import { Tag } from 'components/Tag/Tag';
 import { declOfNum, priceRu } from 'helpers/helpers';
 import Image from 'next/image';
@@ -105,8 +106,12 @@ export const Product = ({
         })}
       >
         {product.reviews.map((r) => (
-          <Review key={r._id} review={r} />
+          <>
+            <Review key={r._id} review={r} />
+            <Divider />
+          </>
         ))}
+        <ReviewForm productId={product._id} />
       </Card>
     </>
   );

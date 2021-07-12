@@ -4,7 +4,7 @@
     [start] 70px [logoend] 30px [titlestart] calc(50% - 100px)
     [middle] 1fr [pricestart] auto [priceend] 40px [creditstart] auto [creditend] 40px [ratestart] auto [end];
 
-  margin-bottom: 30px;
+  margin-top: 30px;
   padding: 30px;
 }
 
@@ -141,6 +141,18 @@
 .characteristicsDots {
   border-bottom: 1px dashed var(--gray-light);
   margin-bottom: 5px;
+}
+
+.closed {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+}
+
+.opened {
+  overflow: hidden;
+  max-height: auto;
+  padding: 30px;
 }
 
 @media screen and (max-width: 1320px) {

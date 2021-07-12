@@ -503,6 +503,18 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+## 16 Работа с формами
+
+<br/>
+
+### 001 Компонент отзыва
+
+<br/>
+
+![Application](/img/pic-course02-m16-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -523,6 +523,16 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 003 useForm
+
+<br/>
+
+### 004 Работа с формами
+
+    $ yarn add react-hook-form
+
+<br/>
+
 ---
 
 <br/>

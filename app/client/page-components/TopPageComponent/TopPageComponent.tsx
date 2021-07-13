@@ -4,7 +4,7 @@ import { ESort } from 'components/Sort/Sort.props';
 import { ETopLevelCategory } from 'interfaces/page.interface';
 import { sortReducer } from 'page-components/TopPageComponent/sort.reducer';
 import { ITopPageComponentProps } from 'page-components/TopPageComponent/TopPageComponent.props';
-import { useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import styles from './TopPageComponent.module.css';
 
 export const TopPageComponent = ({
@@ -23,6 +23,10 @@ export const TopPageComponent = ({
   const setSort = (sort: ESort) => {
     dispatchSort({ type: sort });
   };
+
+  useEffect(() => {
+    dispatchSort({ type: 'reset', initialState: products });
+  }, [products]);
 
   return (
     <div className={styles.wrapper}>

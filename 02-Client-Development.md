@@ -557,6 +557,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 010 Упражнение - Исправление бага useReducer
+
+<br/>
+
 ---
 
 <br/>

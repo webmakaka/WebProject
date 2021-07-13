@@ -577,6 +577,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 004 Анимация сортировки
+
+<br/>
+
 ---
 
 <br/>

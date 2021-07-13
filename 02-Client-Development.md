@@ -545,6 +545,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 007 Упражнение - Обработка ошибок Rating
+
+<br/>
+
 ---
 
 <br/>

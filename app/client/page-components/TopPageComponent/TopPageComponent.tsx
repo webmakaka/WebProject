@@ -1,6 +1,7 @@
 import { Advantages, HhData, Htag, Sort, Tag } from 'components';
 import { Product } from 'components/Product/Product';
 import { ESort } from 'components/Sort/Sort.props';
+import { useScrollY } from 'hooks/useScrollY';
 import { ETopLevelCategory } from 'interfaces/page.interface';
 import { sortReducer } from 'page-components/TopPageComponent/sort.reducer';
 import { ITopPageComponentProps } from 'page-components/TopPageComponent/TopPageComponent.props';
@@ -19,6 +20,7 @@ export const TopPageComponent = ({
       sort: ESort.Rating,
     }
   );
+  const Y = useScrollY();
 
   const setSort = (sort: ESort) => {
     dispatchSort({ type: sort });
@@ -30,6 +32,7 @@ export const TopPageComponent = ({
 
   return (
     <div className={styles.wrapper}>
+      {Y}
       <div className={styles.title}>
         <Htag tag="h1">{page.title}</Htag>
         {products && (

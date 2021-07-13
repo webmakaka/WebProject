@@ -537,6 +537,14 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 006 Обработка ошибок
+
+<br/>
+
+![Application](/img/pic-course02-m16-p03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

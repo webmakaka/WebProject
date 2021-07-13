@@ -4,4 +4,6 @@ export interface ITextAreaProps
   extends DetailedHTMLProps<
     TextareaHTMLAttributes<HTMLTextAreaElement>,
     HTMLTextAreaElement
-  > {}
+  > {
+  error?: FieldError;
+}

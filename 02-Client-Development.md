@@ -549,6 +549,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 008 Отправка запроса со страницы
+
+<br/>
+
 ---
 
 <br/>

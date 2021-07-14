@@ -1,3 +1,4 @@
+import { Up } from 'components';
 import { FunctionComponent } from 'react';
 import { AppContextProvider, IAppContext } from '../context/app.context';
 import { Footer } from './Footer/Footer';
@@ -13,6 +14,7 @@ export const Layout = ({ children }: ILayoutProps): JSX.Element => {
       <Sidebar className={styles.sidebar} />
       <div className={styles.body}>{children}</div>
       <Footer className={styles.footer} />
+      <Up />
     </div>
   );
 };

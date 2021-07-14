@@ -585,6 +585,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 006 useAnimation
+
+<br/>
+
 ---
 
 <br/>

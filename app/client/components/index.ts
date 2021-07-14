@@ -14,3 +14,4 @@ export * from './Search/Search';
 export * from './Sort/Sort';
 export * from './Tag/Tag';
 export * from './TextArea/TextArea';
+export * from './Up/Up';

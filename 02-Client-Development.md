@@ -593,6 +593,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 008 Динамическая иконка
+
+<br/>
+
 ---
 
 <br/>

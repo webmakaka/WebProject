@@ -597,6 +597,18 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 009 Мобильное меню
+
+<br/>
+
+![Application](/img/pic-course02-m17-p01.png?raw=true)
+
+<br/>
+
+![Application](/img/pic-course02-m17-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -641,6 +641,18 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 006 ARIA атрибуты
+
+<br/>
+
+### 007 Использование Screen Reader
+
+<br/>
+
+### 008 Aria-label и aria-labelledby
+
+<br/>
+
 ---
 
 <br/>

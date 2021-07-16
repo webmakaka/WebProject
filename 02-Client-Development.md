@@ -657,6 +657,10 @@ http://localhost:3000/courses/big-data
 
 <br/>
 
+### 010 Добавление landmarks
+
+<br/>
+
 ---
 
 <br/>

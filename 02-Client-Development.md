@@ -683,6 +683,14 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 
 <br/>
 
+## 19 Подготовка к production
+
+<br/>
+
+### 001 Добавление meta на страницу
+
+<br/>
+
 ---
 
 <br/>

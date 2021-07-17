@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { IRatingProps } from 'components/Rating/Rating.props';
 import {
   ForwardedRef,
   forwardRef,

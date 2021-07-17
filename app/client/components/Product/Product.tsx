@@ -29,11 +29,11 @@ export const Product = motion(
 
       const scrollToReview = () => {
         setIsReviewOpened(true);
-        reviewRef.current.scrollIntoView({
+        reviewRef.current?.scrollIntoView({
           behavior: 'smooth',
           block: 'start',
         });
-        reviewRef.current.focus();
+        reviewRef.current?.focus();
       };
 
       return (

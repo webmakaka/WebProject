@@ -6,8 +6,8 @@ import { ITextAreaProps } from './TextArea.props';
 export const TextArea = forwardRef(
   (
     { error, className, ...props }: ITextAreaProps,
-    ref: ForwardedRef
-  ): JSX.Element<HTMLTextAreaElement> => {
+    ref: ForwardedRef<HTMLTextAreaElement>
+  ): JSX.Element => {
     return (
       <div className={cn(styles.textareaWrapper, className)}>
         <textarea

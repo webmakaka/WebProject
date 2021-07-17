@@ -6,13 +6,15 @@
     "start:normal": "next start",
     "start": "yarn dev",
     "dev": "next dev",
+    "export": "next export",
     "build": "next build",
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "lint-staged": {
-    "*.{js, jsx}": [
-      "stylelint"
+    "*.{css}": [
+      "stylelint",
+      "git add"
     ]
   },
   "dependencies": {

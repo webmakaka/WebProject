@@ -21,13 +21,15 @@ export const TopPageComponent = ({
     }
   );
 
-  const shouldReudceMotion = useReducedMotion();
+  const shouldReduceMotion = useReducedMotion();
 
   const setSort = (sort: ESort) => {
+    // @ts-ignore
     dispatchSort({ type: sort });
   };
 
   useEffect(() => {
+    // @ts-ignore
     dispatchSort({ type: 'reset', initialState: products });
   }, [products]);
 
@@ -47,7 +49,7 @@ export const TopPageComponent = ({
           sortedProducts.map((p) => (
             <Product
               role="listitem"
-              layout={shouldReudceMotion ? false : true}
+              layout={shouldReduceMotion ? false : true}
               key={p._id}
               product={p}
             />

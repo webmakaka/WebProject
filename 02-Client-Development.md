@@ -705,6 +705,17 @@ react-yandex-metrika
 
 <br/>
 
+### 004 Next export (Генерация статического html сайта)
+
+    $ yarn build
+    $ yarn export
+
+Чтобы заработало, нужно image нужно заменить на img во всем проекте.
+
+И еще чего-то.
+
+<br/>
+
 ---
 
 <br/>

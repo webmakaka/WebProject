@@ -30,9 +30,12 @@ export const sortReducer = (
         sort: ESort.Price,
         products: state.products.sort((a, b) => (a.price > b.price ? 1 : -1)),
       };
+
+    // @ts-ignore
     case 'reset':
       return {
         sort: ESort.Rating,
+        // @ts-ignore
         products: action.initialState,
       };
     default:

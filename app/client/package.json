@@ -10,6 +10,11 @@
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix"
   },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "stylelint"
+    ]
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "date-fns": "^2.22.1",
@@ -29,6 +34,8 @@
     "eslint": "^7.29.0",
     "eslint-config-next": "11.0.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",

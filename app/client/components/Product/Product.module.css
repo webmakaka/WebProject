@@ -45,10 +45,6 @@
   grid-column: start / middle;
 }
 
-.advBlock {
-  grid-column: middle / end;
-}
-
 .logo img {
   border-radius: 5px;
 }
@@ -105,6 +101,7 @@
 .advBlock {
   font-size: 16px;
   line-height: 22px;
+  grid-column: middle / end;
 }
 
 .advTitle {

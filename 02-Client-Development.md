@@ -691,6 +691,20 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 
 <br/>
 
+### 002 Установка метрики (Пропустил)
+
+react-yandex-metrika
+
+<br/>
+
+### 003 Husky
+
+    $ yarn add -D husky
+
+    $ npm husky add .husky/pre-commit "npm test"
+
+<br/>
+
 ---
 
 <br/>

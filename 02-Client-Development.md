@@ -675,6 +675,10 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 
 <br/>
 
+### 013 Доступность меню и списка
+
+<br/>
+
 ---
 
 <br/>

@@ -679,6 +679,10 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 
 <br/>
 
+### 014 Уменьшение движения
+
+<br/>
+
 ---
 
 <br/>

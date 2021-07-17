@@ -1,6 +1,7 @@
 import { Advantages, HhData, Htag, Sort, Tag } from 'components';
 import { Product } from 'components/Product/Product';
 import { ESort } from 'components/Sort/Sort.props';
+import { useReducedMotion } from 'framer-motion';
 import { ETopLevelCategory } from 'interfaces/page.interface';
 import { sortReducer } from 'page-components/TopPageComponent/sort.reducer';
 import { ITopPageComponentProps } from 'page-components/TopPageComponent/TopPageComponent.props';
@@ -19,6 +20,8 @@ export const TopPageComponent = ({
       sort: ESort.Rating,
     }
   );
+
+  const shouldReudceMotion = useReducedMotion();
 
   const setSort = (sort: ESort) => {
     dispatchSort({ type: sort });
@@ -42,7 +45,12 @@ export const TopPageComponent = ({
       <div role="list">
         {sortedProducts &&
           sortedProducts.map((p) => (
-            <Product role="listitem" layout key={p._id} product={p} />
+            <Product
+              role="listitem"
+              layout={shouldReudceMotion ? false : true}
+              key={p._id}
+              product={p}
+            />
           ))}
       </div>
 

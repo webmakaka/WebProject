@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { AppContext } from 'context/app.context';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { firstLevelMenu } from 'helpers/helpers';
 import { IFirstLevelMenuItem, IPageItem } from 'interfaces/menu.interface';
 import Link from 'next/link';
@@ -11,15 +11,18 @@ import styles from './Menu.module.css';
 export const Menu = (): JSX.Element => {
   const { menu, setMenu, firstCategory } = useContext(AppContext);
   const [announce, setAnnounce] = useState<'closed' | 'opened' | 'undefined'>();
+  const shouldReudceMotion = useReducedMotion();
   const router = useRouter();
 
   const variants = {
     visible: {
       marginBottom: 20,
-      transition: {
-        when: 'beforeChildren',
-        staggerChildren: 0.1,
-      },
+      transition: shouldReudceMotion
+        ? {}
+        : {
+            when: 'beforeChildren',
+            staggerChildren: 0.1,
+          },
     },
     hidden: {
       marginBottom: 0,
@@ -32,7 +35,7 @@ export const Menu = (): JSX.Element => {
       height: 29,
     },
     hidden: {
-      opacity: 0,
+      opacity: shouldReudceMotion ? 1 : 0,
       height: 0,
     },
   };

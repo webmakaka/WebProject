@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { ButtonIcon } from 'components';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Sidebar } from 'layout/Sidebar/Sidebar';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -11,6 +11,7 @@ import { IHeaderProps } from './Header.props';
 export const Header = ({ className, ...props }: IHeaderProps): JSX.Element => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   const router = useRouter();
+  const shouldReudceMotion = useReducedMotion();
 
   useEffect(() => {
     setIsOpened(false);
@@ -25,7 +26,7 @@ export const Header = ({ className, ...props }: IHeaderProps): JSX.Element => {
       },
     },
     closed: {
-      opacity: 0,
+      opacity: shouldReudceMotion ? 1 : 0,
       x: '100%',
     },
   };

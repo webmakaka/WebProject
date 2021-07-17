@@ -21,6 +21,7 @@
 .price,
 .priceTitle {
   grid-column: pricestart / priceend;
+
   white-space: nowrap;
 }
 
@@ -32,6 +33,7 @@
 .rating,
 .rateTitle {
   grid-column: ratestart / end;
+
   white-space: nowrap;
 }
 
@@ -50,10 +52,11 @@
 }
 
 .title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
   align-self: flex-end;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
 }
 
 .category {
@@ -62,9 +65,10 @@
 
 .price,
 .credit {
+  align-self: flex-end;
+
   font-size: 20px;
   line-height: 27px;
-  align-self: flex-end;
 }
 
 .month {
@@ -81,16 +85,17 @@
 }
 
 .description {
+  margin-bottom: 15px;
+
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 15px;
 }
 
 .priceTitle,
 .creditTitle,
 .rateTitle {
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   line-height: 19px;
 }
 
@@ -105,30 +110,34 @@
 }
 
 .advTitle {
-  font-weight: bold;
   margin-bottom: 5px;
+
+  font-weight: bold;
 }
 
 .advantages {
-  border-left: 2px solid #1dc37e;
-  padding-left: 15px;
   margin-bottom: 20px;
+  padding-left: 15px;
+
+  border-left: 2px solid #1DC37E;
 }
 
 .disadvantages {
-  border-left: 2px solid var(--red);
   padding-left: 15px;
+
+  border-left: 2px solid var(--red);
 }
 
 .characteristics {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  padding-right: 60px;
   align-items: baseline;
-  gap: 10px;
+
+  padding-right: 60px;
 
   font-size: 16px;
   line-height: 32px;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
 }
 
 .characteristicsName {
@@ -136,12 +145,14 @@
 }
 
 .characteristicsDots {
-  border-bottom: 1px dashed var(--gray-light);
   margin-bottom: 5px;
+
+  border-bottom: 1px dashed var(--gray-light);
 }
 
 .reviews {
   overflow: hidden;
+
   padding: 30px;
 }
 
@@ -168,6 +179,7 @@
 
   .logo {
     grid-area: logo;
+
     margin-bottom: 20px;
   }
 
@@ -177,6 +189,7 @@
 
   .tags {
     grid-area: tags;
+
     margin-bottom: 20px;
   }
 
@@ -214,6 +227,7 @@
 
   .feature {
     grid-area: feature;
+
     margin-bottom: 20px;
   }
 

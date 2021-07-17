@@ -64,7 +64,7 @@ export const Menu = (): JSX.Element => {
     return (
       <ul className={styles.firstLevelList}>
         {firstLevelMenu.map((m) => (
-          <li key={m.route} aria-expended={m.id == firstCategory}>
+          <li key={m.route} aria-expanded={m.id == firstCategory}>
             <Link href={`/${m.route}`}>
               <a>
                 <div
@@ -101,7 +101,7 @@ export const Menu = (): JSX.Element => {
                 }
                 className={styles.secondLevel}
                 onClick={() => openSecondLevel(m._id.secondCategory)}
-                aria-expended={m.isOpened}
+                aria-expanded={m.isOpened}
               >
                 {m._id.secondCategory}
               </button>

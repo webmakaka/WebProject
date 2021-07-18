@@ -26,7 +26,7 @@ export const Layout = ({ children }: ILayoutProps): JSX.Element => {
     <div className={styles.wrapper}>
       <a
         onFocus={() => setIsSkipLinkDisplayed(true)}
-        tabIndex={1}
+        tabIndex={0}
         className={cn(styles.skipLink, {
           [styles.displayed]: isSkipLinkDisplayed,
         })}

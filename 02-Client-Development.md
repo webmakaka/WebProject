@@ -724,6 +724,10 @@ react-yandex-metrika
 
 <br/>
 
+### 007 Запуск через docker-compose
+
+<br/>
+
 ---
 
 <br/>
